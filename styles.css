@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('x.jpg'); /* Set your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+    color: black; /* Set default text color to black */
+}
+
+header {
+    background: rgba(53, 66, 74, 0.8); /* Semi-transparent background for header */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Required for dropdown positioning */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #35424a; /* Change text color for dropdown items */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid white;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color:#ffffff; 
+    color: black;
+}
+tr:nth-child(even) {
+    background-color:  rgba(53, 66, 74, 0.8);
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    flex: 1; /* Allows the container to grow and push footer down */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+}
+
+.loan-box {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for loan box */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em; /* Increase font size */
+}
+
+.loan-buttons {
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.loan-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #35424a; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.loan-button:hover {
+    background-color: #2c3e50; /* Darker shade on hover */
+}
+.container {
+    width: 80%;
+    margin: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.form-box label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-box input, .form-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation {
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0.8); /* Blue background */
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+}
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button[type="submit"] {
+    background-color: #f44336; /* Red for delete */
+}
+
+button[type="submit"]:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(53, 66, 74, 0.8); /* Semi-transparent background for footer */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
